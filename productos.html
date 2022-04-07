@@ -1,0 +1,304 @@
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio
+$ git clone https://github.com/axgtMaster/Curso-de-Git.git
+Cloning into 'Curso-de-Git'...
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 24 (delta 6), reused 9 (delta 2), pack-reused 0
+Receiving objects: 100% (24/24), 4.58 KiB | 1.53 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio
+$ cd Curso-de-Git/
+d
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ dir
+home.html.txt  index.html  productos.html  proveedores.html
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git add .
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git commit -m "Prueba de modificacion desde la consola"
+[main 834f8bc] Prueba de modificacion desde la consola
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git push
+
+git push
+
+fatal: helper error (-1073741510): Unknown
+
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 158.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/axgtMaster/Curso-de-Git.git
+   5de7bc7..834f8bc  main -> main
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git branch
+* main
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git checkout -b prueba
+Switched to a new branch 'prueba'
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git push
+fatal: The current branch prueba has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin prueba
+
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$  git push --set-upstream origin prueba
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'prueba' on GitHub by visiting:
+remote:      https://github.com/axgtMaster/Curso-de-Git/pull/new/prueba
+remote:
+To https://github.com/axgtMaster/Curso-de-Git.git
+ * [new branch]      prueba -> prueba
+branch 'prueba' set up to track 'origin/prueba'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git branch
+* main
+  prueba
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git checkout prueba
+Switched to branch 'prueba'
+Your branch is up to date with 'origin/prueba'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git add .
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git commit -m "modificacion index.html"
+[prueba 3c56d30] modificacion index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 69.00 KiB/s, done.
+Total 3 (delta 1), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/axgtMaster/Curso-de-Git.git
+   834f8bc..3c56d30  prueba -> prueba
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git checkout prueba
+Switched to branch 'prueba'
+Your branch is up to date with 'origin/prueba'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git pull
+Already up to date.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git stash
+Saved working directory and index state WIP on prueba: 3c56d30 modificacion index.html
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git pull
+Already up to date.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ git checkout prueba
+Switched to branch 'prueba'
+Your branch is up to date with 'origin/prueba'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git stash apply+
+fatal: unknown subcommand: apply+
+
+usage: git stash list [<options>]
+   or: git stash show [<options>] [<stash>]
+   or: git stash drop [-q|--quiet] [<stash>]
+   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+   or: git stash branch <branchname> [<stash>]
+   or: git stash clear
+   or: git stash [push [-p|--patch] [-S|--staged] [-k|--[no-]keep-index] [-q|--quiet]
+                 [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+                 [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                 [--] [<pathspec>...]]
+   or: git stash save [-p|--patch] [-S|--staged] [-k|--[no-]keep-index] [-q|--quiet]
+                 [-u|--include-untracked] [-a|--all] [<message>]
+
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git stash apply
+On branch prueba
+Your branch is up to date with 'origin/prueba'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git checkout .
+Updated 1 path from the index
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git status
+On branch prueba
+Your branch is up to date with 'origin/prueba'.
+
+nothing to commit, working tree clean
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git log
+commit 3c56d30c8cad28f4fb6a7599fcdedd79875ed331 (HEAD -> prueba, origin/prueba)
+Author: axgtMaster <axgt.master@gmail.com>
+Date:   Thu Apr 7 12:39:57 2022 -0400
+
+commit 3c56d30c8cad28f4fb6a7599fcdedd79875ed331 (HEAD -> prueba, origin/prueba)
+Author: axgtMaster <axgt.master@gmail.com>
+Date:   Thu Apr 7 12:39:57 2022 -0400
+
+    modificacion index.html
+
+commit 834f8bc88cb9bca47d8aa59c1b845ec25d2e2802 (origin/main, origin/HEAD, main)
+Author: axgtMaster <axgt.master@gmail.com>
+Date:   Thu Apr 7 12:30:04 2022 -0400
+
+    Prueba de modificacion desde la consola
+
+commit 5de7bc74c495b0341270555905dc175258ac07cb
+Author: axgtMaster <73081738+axgtMaster@users.noreply.github.com>
+Date:   Thu Apr 7 11:44:11 2022 -0400
+
+    Create proveedores.html
+
+commit eb5388312c7fe011a6088d9f59b2afa3da8ed3fa
+Merge: af80de7 c3950a3
+Author: axgtMaster <73081738+axgtMaster@users.noreply.github.com>
+Date:   Thu Apr 7 11:40:42 2022 -0400
+
+:
+commit 3c56d30c8cad28f4fb6a7599fcdedd79875ed331 (HEAD -> prueba, origin/prueba)
+commit 3c56d30c8cad28f4fb6a7599fcdedd79875ed331 (HEAD -> prueba, origin/prueba)
+Author: axgtMaster <axgt.master@gmail.com>
+Date:   Thu Apr 7 12:39:57 2022 -0400
+
+    modificacion index.html
+
+commit 834f8bc88cb9bca47d8aa59c1b845ec25d2e2802 (origin/main, origin/HEAD, main)
+Author: axgtMaster <axgt.master@gmail.com>
+Date:   Thu Apr 7 12:30:04 2022 -0400
+
+    Prueba de modificacion desde la consola
+
+commit 5de7bc74c495b0341270555905dc175258ac07cb
+Author: axgtMaster <73081738+axgtMaster@users.noreply.github.com>
+Date:   Thu Apr 7 11:44:11 2022 -0400
+
+    Create proveedores.html
+
+commit eb5388312c7fe011a6088d9f59b2afa3da8ed3fa
+Merge: af80de7 c3950a3
+Author: axgtMaster <73081738+axgtMaster@users.noreply.github.com>
+Date:   Thu Apr 7 11:40:42 2022 -0400
+
+    Merge pull request #1 from axgtMaster/Temuco
+:
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (prueba)
+$ git checkout feature1
+Switched to a new branch 'feature1'
+D       home.html.txt
+branch 'feature1' set up to track 'origin/feature1'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (feature1)
+$ git checkout Develop
+Switched to a new branch 'Develop'
+D       home.html.txt
+branch 'Develop' set up to track 'origin/Develop'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (Develop)
+$ git checkout amin
+error: pathspec 'amin' did not match any file(s) known to git
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (Develop)
+$ dir}
+bash: dir}: command not found
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (Develop)
+$ dir
+bin  home.html  index.html  productos.html  proveedores.html
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (Develop)
+$ git checkout main
+Switched to branch 'main'
+D       home.html.txt
+Your branch is up to date with 'origin/main'.
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ dir
+bin  home.html  index.html  productos.html  proveedores.html
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$ (prueba)
+^C
+
+rodolfosalazar@NTBK-GTI-74 MINGW64 ~/OneDrive - Clinica Las Condes/Escritorio/Curso-de-Git (main)
+$
